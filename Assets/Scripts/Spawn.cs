@@ -17,10 +17,11 @@ public class Spawn : MonoBehaviour
     public float maxZ = 5.02f;
 
 
-
+    private GameManager gameManager;
     void Start()
     {
-        Spawn2();
+        gameManager = GetComponent<GameManager>();
+        gameManager.Spawn2();
     }
 
     
@@ -42,7 +43,10 @@ public class Spawn : MonoBehaviour
         {
             MoveRight();
         }
-
+        if (Input.GetKeyDown(KeyCode.W) || Input.GetKeyDown(KeyCode.S) || Input.GetKeyDown(KeyCode.A) || Input.GetKeyDown(KeyCode.D))
+        {
+            gameManager.Spawn2();
+        }
     }
 
     void MoveUp()
@@ -97,45 +101,5 @@ public class Spawn : MonoBehaviour
 
 
 
-    public void Spawn2()
-    {
-        int randomSpawn = Random.Range(1, 9);
-        if (randomSpawn==1)
-        {
-            Square2.transform.position= new Vector3(minX, cordY, minZ);
-        }
-        if (randomSpawn == 2)
-        {
-            Square2.transform.position = new Vector3(avrX, cordY, minZ);
-        }
-        if (randomSpawn == 3)
-        {
-            Square2.transform.position = new Vector3(maxX, cordY, minZ);
-        }
-        if (randomSpawn == 4)
-        {
-            Square2.transform.position = new Vector3(minX, cordY, avrZ);
-        }
-        if (randomSpawn == 5)
-        {
-            Square2.transform.position = new Vector3(avrX, cordY, avrZ);
-        }
-        if (randomSpawn == 6)
-        {
-            Square2.transform.position = new Vector3(maxX, cordY, avrZ);
-        }
-        if (randomSpawn == 7)
-        {
-            Square2.transform.position = new Vector3(minX, cordY, maxZ);
-        }
-        if (randomSpawn == 8)
-        {
-            Square2.transform.position = new Vector3(avrX, cordY, maxZ);
-        }
-        if (randomSpawn == 9)
-        {
-            Square2.transform.position = new Vector3(maxX, cordY, maxZ);
-        }
-        
-    }
+    
 }

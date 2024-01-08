@@ -12,6 +12,8 @@ GameObject:
   - component: {fileID: 6768625585425737899}
   - component: {fileID: 992056005492713879}
   - component: {fileID: 7350863310742782439}
+  - component: {fileID: 8662451831216949901}
+  - component: {fileID: -4967619796922807930}
   m_Layer: 0
   m_Name: 2SquarePrefab
   m_TagString: Untagged
@@ -28,7 +30,7 @@ Transform:
   m_GameObject: {fileID: 5578614202949376623}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -13.6, y: 5, z: 4.3}
+  m_LocalPosition: {x: 4.7, y: 5, z: 5.02}
   m_LocalScale: {x: 0.5, y: 1, z: 0.5}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -106,3 +108,43 @@ MeshCollider:
   m_Convex: 0
   m_CookingOptions: 30
   m_Mesh: {fileID: 10209, guid: 0000000000000000e000000000000000, type: 0}
+--- !u!114 &8662451831216949901
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5578614202949376623}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 1b101ec395281024594106088cb29705, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  Square2: {fileID: 5578614202949376623}
+  minX: -13.9
+  avrX: -4.4
+  maxX: 4.7
+  cordY: 5
+  minZ: -13.9
+  avrZ: -4.52
+  maxZ: 5.02
+--- !u!114 &-4967619796922807930
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5578614202949376623}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 808a19ec7f093a04b8a7dd25b31bda92, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  Square2: {fileID: 5578614202949376623}
+  minX: -13.9
+  avrX: -4.4
+  maxX: 4.7
+  cordY: 5
+  minZ: -13.9
+  avrZ: -4.52
+  maxZ: 5.02

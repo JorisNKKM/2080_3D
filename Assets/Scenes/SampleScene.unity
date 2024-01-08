@@ -38,7 +38,7 @@ RenderSettings:
   m_ReflectionIntensity: 1
   m_CustomReflection: {fileID: 0}
   m_Sun: {fileID: 705507994}
-  m_IndirectSpecularColor: {r: 0.44657868, g: 0.49641263, b: 0.57481706, a: 1}
+  m_IndirectSpecularColor: {r: 0.44657898, g: 0.4964133, b: 0.5748178, a: 1}
   m_UseRadianceAmbientProbe: 0
 --- !u!157 &3
 LightmapSettings:
@@ -962,7 +962,34 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 808a19ec7f093a04b8a7dd25b31bda92, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  Square2: {fileID: 1501040165}
+  Square2: {fileID: 5578614202949376623, guid: 2a6f5385982691a47ab95c93c1677fef, type: 3}
+  minX: -13.9
+  avrX: -4.4
+  maxX: 4.7
+  cordY: 5
+  minZ: -13.9
+  avrZ: -4.52
+  maxZ: 5.02
+--- !u!114 &1501040175
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1501040165}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 1b101ec395281024594106088cb29705, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  Square2: {fileID: 5578614202949376623, guid: 2a6f5385982691a47ab95c93c1677fef, type: 3}
+  minX: -13.9
+  avrX: -4.4
+  maxX: 4.7
+  cordY: 5
+  minZ: -13.9
+  avrZ: -4.52
+  maxZ: 5.02
 --- !u!1 &1737438325
 GameObject:
   m_ObjectHideFlags: 0
@@ -1344,6 +1371,9 @@ PrefabInstance:
     - targetCorrespondingSourceObject: {fileID: 5578614202949376623, guid: 2a6f5385982691a47ab95c93c1677fef, type: 3}
       insertIndex: -1
       addedObject: {fileID: 1501040170}
+    - targetCorrespondingSourceObject: {fileID: 5578614202949376623, guid: 2a6f5385982691a47ab95c93c1677fef, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 1501040175}
   m_SourcePrefab: {fileID: 100100000, guid: 2a6f5385982691a47ab95c93c1677fef, type: 3}
 --- !u!1660057539 &9223372036854775807
 SceneRoots:
