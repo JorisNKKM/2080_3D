@@ -2,21 +2,31 @@ using UnityEngine;
 
 public class BallMovement : MonoBehaviour
 {
-    public float jumpForce = 10;
-    private Rigidbody rb;
-
-    void Start()
-    {
-        rb = GetComponent<Rigidbody>();
-    }
+    private bool isJumping = false;
 
 
-    void OnCollisionEnter(Collision collision)
+    private void OnCollisionStay(Collision collision)
     {
         if (collision.gameObject.CompareTag("GameObject"))
         {
-            rb.AddForce(Vector3.up * jumpForce, ForceMode.Impulse);
+            if (!isJumping)
+            {
+                isJumping = true;
+                
+            }
+        }
+    }
+
+    void Update()
+    {
+        if (isJumping==true)
+        {
+
+            
+            Vector3 targetPosition = new Vector3(transform.position.x, transform.position.y + 0.01f, transform.position.z);
+            transform.position = targetPosition;
+
+            
         }
     }
 }
-
