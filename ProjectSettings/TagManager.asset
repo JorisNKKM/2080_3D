@@ -7,6 +7,15 @@ TagManager:
   - GameObject
   - Ball2
   - Ball4
+  - Ball8
+  - Ball16
+  - Ball32
+  - Ball64
+  - Ball128
+  - Ball256
+  - Ball512
+  - Ball1024
+  - Ball2048
   layers:
   - Default
   - TransparentFX
