@@ -3,7 +3,7 @@ using UnityEngine;
 public class StageMovement : MonoBehaviour
 {
     public GameObject Stage;
-    public float speed = 5;
+    public float speed=5;
    
     
 

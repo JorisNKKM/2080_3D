@@ -13,7 +13,8 @@ GameObject:
   - component: {fileID: 3309165176927256354}
   - component: {fileID: 1463886217269034631}
   - component: {fileID: 8857984378599489484}
-  - component: {fileID: -7544422726200687526}
+  - component: {fileID: 4634527747468413962}
+  - component: {fileID: 5347388853444782474}
   m_Layer: 0
   m_Name: Ball32
   m_TagString: Ball32
@@ -134,7 +135,7 @@ Rigidbody:
   m_Interpolate: 0
   m_Constraints: 0
   m_CollisionDetection: 0
---- !u!114 &-7544422726200687526
+--- !u!114 &4634527747468413962
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -143,17 +144,19 @@ MonoBehaviour:
   m_GameObject: {fileID: 4861550268952301100}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 4d9ed96ad1688674093c8a280a4b12c2, type: 3}
+  m_Script: {fileID: 11500000, guid: 330568faa02a65b40b0500f263d304e9, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  Ball2: {fileID: 0}
-  Ball4: {fileID: 0}
-  Ball8: {fileID: 0}
-  Ball16: {fileID: 0}
-  Ball32: {fileID: 4861550268952301100}
   Ball64: {fileID: 2672007623986820215, guid: 44f0831c3577bc94e9a0938d7c096d48, type: 3}
-  Ball128: {fileID: 0}
-  Ball256: {fileID: 0}
-  Ball512: {fileID: 0}
-  Ball1024: {fileID: 0}
-  Ball2048: {fileID: 0}
+--- !u!114 &5347388853444782474
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4861550268952301100}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 604368d34ed9f254f8434fb3e2119375, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 

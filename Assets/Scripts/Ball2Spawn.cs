@@ -6,7 +6,6 @@ public class Ball2Spawn : MonoBehaviour
 {
      private float frequency = 5f;
      public GameObject objectToSpawn;
-     private Vector3 spawnPosition = new Vector3(70.79749f, 105f, 1.237597f);
 
     void Start()
     {
@@ -15,7 +14,11 @@ public class Ball2Spawn : MonoBehaviour
 
     void SpawnObject()
     {
+        int addX=Random.Range(-10, 10);
+        int addZ = Random.Range(-10, 10);
+        Vector3 spawnPosition = new Vector3(70.79749f+ addX, 110f, 1.237597f+ addZ);
         Instantiate(objectToSpawn, spawnPosition, Quaternion.identity);
     }
+    
 
 }
