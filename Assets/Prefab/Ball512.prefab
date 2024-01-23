@@ -148,6 +148,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   Ball1024: {fileID: 2498238773182545884, guid: 1494a48218b273d468ee447677b5d581, type: 3}
+  Pop: {fileID: 8300000, guid: ee02bb863db53b440963d52bd7267d00, type: 3}
 --- !u!114 &15495721720266578
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -160,3 +161,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 604368d34ed9f254f8434fb3e2119375, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  jumpHeight: 0
+  timeElapsed: 0
+  jumpInterval: 2

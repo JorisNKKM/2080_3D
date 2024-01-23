@@ -5,6 +5,7 @@ using UnityEngine;
 public class Ball_32 : MonoBehaviour
 {
     public GameObject Ball64;
+    public AudioClip Pop;
 
     void OnCollisionEnter(Collision collision)
     {
@@ -13,6 +14,8 @@ public class Ball_32 : MonoBehaviour
             Vector3 ball32Position = collision.gameObject.transform.position;
             Destroy(collision.gameObject);
             Instantiate(Ball64, ball32Position, Quaternion.identity);
+
+            AudioSource.PlayClipAtPoint(Pop, transform.position);
         }
     }
 }

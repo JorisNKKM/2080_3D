@@ -148,6 +148,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   Ball256: {fileID: 9170632921763762500, guid: ba8a4b388bb0e104ea15f7eb3b8b2286, type: 3}
+  Pop: {fileID: 8300000, guid: ee02bb863db53b440963d52bd7267d00, type: 3}
 --- !u!114 &1586706594250646259
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -160,3 +161,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 604368d34ed9f254f8434fb3e2119375, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  jumpHeight: 0
+  timeElapsed: 0
+  jumpInterval: 2

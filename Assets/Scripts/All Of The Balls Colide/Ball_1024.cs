@@ -3,6 +3,7 @@ using UnityEngine;
 public class Ball_1024 : MonoBehaviour
 {
     public GameObject Ball2048;
+    public AudioClip Pop;
 
     void OnCollisionEnter(Collision collision)
     {
@@ -13,6 +14,8 @@ public class Ball_1024 : MonoBehaviour
             Instantiate(Ball2048, ball1024Position, Quaternion.identity);
             Count2048 count2048 = FindObjectOfType<Count2048>();
             count2048.Start();
+
+            AudioSource.PlayClipAtPoint(Pop, transform.position);
         }
         
     }

@@ -4,11 +4,25 @@ public class BallMovement : MonoBehaviour
 {
     private bool isJumping = false;
     public float jumpHeight;
+    public float jumpStrenght;
     public float timeElapsed=0f;
-    public float jumpInterval=2f;
-    private void Start()
+    public float jumpInterval=0.5f;
+    public void Start()
     {
         jumpHeight = 0.005f;
+    }
+    public void EasyDifficulty()
+    {
+        jumpStrenght = 0;
+        print(1);
+    }
+    public void MediumDifficulty()
+    {
+        jumpStrenght = 0.005f;
+    }
+    public void HardDifficulty()
+    {
+        jumpStrenght = 0.01f;
     }
     private void OnCollisionStay(Collision collision)
     {
@@ -21,6 +35,7 @@ public class BallMovement : MonoBehaviour
             }
         }
     }
+    
 
     void Update()
     {
@@ -29,7 +44,8 @@ public class BallMovement : MonoBehaviour
         if (timeElapsed >= jumpInterval)
         {
             timeElapsed = 0f;
-            jumpHeight += 0.0005f;
+            jumpHeight += jumpStrenght; 
+            print(jumpHeight);
         }
 
         if (isJumping==true)
