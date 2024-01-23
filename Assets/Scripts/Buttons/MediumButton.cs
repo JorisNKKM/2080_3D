@@ -11,10 +11,7 @@ public class Medium : MonoBehaviour
     public void OnMouseUp()
     {
         SceneManager.LoadScene("Main");
-        After();
+        //After();
     }
-    public void After()
-    {
-        difficulty.Medium();
-    }
+    
 }

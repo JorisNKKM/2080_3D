@@ -9,7 +9,7 @@ public class BallMovement : MonoBehaviour
     public float jumpInterval=0.5f;
     public void Start()
     {
-        jumpHeight = 0.005f;
+        jumpHeight = 0.01f;
     }
     public void EasyDifficulty()
     {

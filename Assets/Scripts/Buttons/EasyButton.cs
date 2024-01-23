@@ -1,6 +1,5 @@
 using System.Collections;
 using System.Collections.Generic;
-using UnityEditor.SceneManagement;
 using UnityEngine;
 using UnityEngine.SceneManagement;
 
@@ -13,13 +12,10 @@ public class EasyButton : MonoBehaviour
     {
 
         SceneManager.LoadScene("Main");
-        print("woks");
-        After();
+        
+        //After();
 
 
     }
-    public void After()
-    {
-        difficulty.Easy();
-    }
+    
 }
